@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/76creates/stickers/flexbox"
+	"github.com/SevDaisy/stickers/flexbox"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 )
@@ -81,6 +81,7 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	}
 	return m, nil
 }
+
 func (m *model) View() string {
 	return m.flexBox.Render()
 }
